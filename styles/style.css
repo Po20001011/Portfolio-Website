@@ -15,6 +15,9 @@ h6 {
 
 body nav {
   background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 body nav ul {
   display: flex;
@@ -68,12 +71,44 @@ body main section.main-area div.img-area {
 }
 body main section.main-area div.img-area img {
   width: 100%;
+  max-width: 200px;
+  max-height: 300px;
+  border-radius: 10%;
 }
-body main section.about-me {
-  background-color: rgb(9, 138, 238);
+body main section.skills {
+  background-color: rgb(16, 235, 191);
   padding: 5rem 0rem;
   display: flex;
   justify-content: center;
+}
+body main section.skills section.description {
+  width: 50%;
+  text-align: center;
+}
+body main section.skills section.description h2 {
+  font-size: 2rem;
+}
+body main section.skills section.description .progress-bar-area p {
+  margin-top: 1rem;
+}
+body main section.resume {
+  flex: 5 1 500px;
+  padding: 2rem;
+  background-color: rgb(240, 240, 240);
+}
+body main section.resume h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+body main section.about-me {
+  background-color: rgb(16, 235, 191);
+  padding: 5rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+body main section.about-me h2 {
+  font-weight: bold;
 }
 body main section.about-me section.description {
   width: 50%;
@@ -84,4 +119,21 @@ body main section.about-me section.description h2 {
 }
 body main section.about-me section.description .progress-bar-area p {
   margin-top: 1rem;
+}
+body main section.table {
+  flex: 5 1 500px;
+  padding: 2rem;
+}
+body main section.table table {
+  border-collapse: collapse;
+  border: 2px solid gray;
+}
+body main section.table table tr {
+  transition: all 0.2s ease;
+}
+body main section.table table tr:hover {
+  background-color: rgb(184, 255, 222);
+}
+body main section.table table tr td {
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

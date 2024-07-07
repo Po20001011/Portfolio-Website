@@ -16,6 +16,9 @@ h6 {
 body {
     nav {
         background-color: white;
+        position: sticky;
+        top: 0;
+        z-index: 5;
 
         ul {
             display: flex;
@@ -81,12 +84,15 @@ body {
 
                 img {
                     width: 100%;
+                    max-width: 200px;
+                    max-height: 300px;
+                    border-radius: 10%;
                 }
             }
         }
 
-        section.about-me {
-            background-color: rgb(9, 138, 238);
+        section.skills {
+            background-color: rgb(16, 235, 191);
             padding: 5rem 0rem;
             display: flex;
             justify-content: center;
@@ -102,6 +108,70 @@ body {
                 .progress-bar-area {
                     p {
                         margin-top: 1rem;
+                    }
+                }
+            }
+        }
+
+        section.resume {
+            flex: 5 1 500px;
+            padding: 2rem;
+            background-color: rgb(240, 240, 240);
+
+            h2 {
+                text-align: center;
+                margin-bottom: 2rem;
+                font-weight: bold;
+            }
+
+
+        }
+
+        section.about-me {
+            background-color: rgb(16, 235, 191);
+            padding: 5rem 0rem;
+            display: flex;
+            justify-content: center;
+
+            h2 {
+                font-weight: bold;
+            }
+
+            section.description {
+                width: 50%;
+                text-align: center;
+
+                h2 {
+                    font-size: 2rem;
+                }
+
+                .progress-bar-area {
+                    p {
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+
+        section.table {
+
+            flex: 5 1 500px;
+            padding: 2rem;
+
+            table {
+                border-collapse: collapse;
+                border: 2px solid gray;
+
+                tr {
+
+                    transition: all 0.2s ease;
+
+                    &:hover {
+                        background-color: rgb(184, 255, 222);
+                    }
+
+                    td {
+                        padding: 1rem;
                     }
                 }
             }
